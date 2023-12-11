@@ -279,7 +279,7 @@ footer {
   font-size: 23px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   body {
     width: 1024px;
   }
@@ -314,15 +314,15 @@ footer {
     font-size: 23px;
     font-weight: 700;
   }
-  .wrapper_two--right ul {
-    margin-right: 0px;
+  .wrapper_two--right {
+    margin-left: -30px;
     font-size: 23px;
   }
   .wrapper_two li {
     width: 200px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   * {
     font-size: 20px;
   }
@@ -393,22 +393,243 @@ footer {
   .wrapper_two {
     width: 768px;
   }
+  .wrapper_two--left {
+    margin-left: -20px;
+    word-break: break-all;
+  }
   .wrapper_two--center ul {
     font-size: 14px;
   }
-  .wrapper_two--right ul {
-    margin-right: 5px;
+  .wrapper_two--right {
+    margin-right: 50px;
     font-size: 14px;
-    align-self: end;
   }
   .wrapper_two li {
-    margin: 0;
-    text-decoration: none;
-    list-style-type: none;
-    color: #000000;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px;
     width: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    width: 480px;
+  }
+  header {
+    width: 480px;
+    height: 81px;
+  }
+  header .wrapper {
+    width: 480px;
+    height: 81px;
+  }
+  header .text ul {
+    display: none;
+  }
+  header .text img {
+    height: 81px;
+    width: 80px;
+  }
+  header .wrapper_menu {
+    display: block;
+    width: 36px;
+    height: 22px;
+    padding: 15px 0 12px 0;
+  }
+  .container {
+    width: 480px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+  a {
+    font-size: 16px;
+  }
+  .popular-products {
+    width: 480px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 0px;
+  }
+  .container .articles {
+    grid-template-columns: repeat(1, 304px);
+    grid-template-rows: 163px;
+    justify-content: space-around;
+  }
+  .container .articles div img {
+    width: 304px;
+    height: 94px;
+  }
+  .container .articles p {
+    font-size: 16px;
+  }
+  .container form {
+    width: 480px;
+    height: 471px;
+  }
+  .container form h1 {
+    font-size: 16px;
+  }
+  .container form .group {
+    margin: 10px;
+    padding: 5px;
+  }
+  .container form .group label {
+    font-size: 14px;
+    padding-left: 10px;
+    text-transform: uppercase;
+  }
+  .container form .group input {
+    height: 48px;
+    width: 277px;
+    font-size: 14px;
+  }
+  .container form .group button {
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    padding: 10px 30px;
+    height: 42px;
+    font-size: 16px;
+  }
+  footer {
+    width: 480px;
+  }
+  .wrapper_two {
+    width: 480px;
+  }
+  .wrapper_two--center ul {
+    font-size: 10px;
+    margin-left: 60px;
+  }
+  .wrapper_two--right ul {
+    font-size: 10px;
+    margin-right: 65px;
+    align-self: end;
+  }
+  .wrapper_two li {
+    font-size: 10px;
+    width: 100px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    width: 320px;
+  }
+  header {
+    width: 320px;
+    height: 32px;
+  }
+  header .wrapper {
+    width: 320px;
+    height: 32px;
+  }
+  header .text ul {
+    display: none;
+  }
+  header .text img {
+    height: 32px;
+    width: 31px;
+  }
+  header .wrapper_menu {
+    display: block;
+    width: 31px;
+    height: 31px;
+    padding: 15px 0 7px 0;
+  }
+  .container {
+    width: 320px;
+    margin-top: 0px;
+  }
+  .container h2 {
+    font-size: 15px;
+    margin-bottom: 36px;
+  }
+  .container p {
+    font-size: 14px;
+  }
+  .container a {
+    font-size: 12px;
+  }
+  .popular-products {
+    width: 320px;
+  }
+  .container .articles {
+    grid-template-columns: repeat(1, 302px);
+    grid-template-rows: 165px;
+  }
+  .container .articles div img {
+    width: 302px;
+    height: 92px;
+  }
+  .container .articles p {
+    font-size: 16px;
+  }
+  .container form {
+    width: 320px;
+    height: 356px;
+  }
+  .container form h1 {
+    font-size: 20px;
+  }
+  .container form .group {
+    margin: 5px;
+    padding: 5px;
+  }
+  .container form .group label {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  .container form .group input {
+    height: 32px;
+    width: 250px;
+    font-size: 14px;
+  }
+  .container form .group input:focus {
+    width: 200px;
+  }
+  .container form .group button {
+    padding: 0px 0px;
+    height: 34px;
+    width: 123px;
+    font-size: 15px;
+  }
+  footer {
+    width: 320px;
+    height: 300px;
+  }
+  .wrapper_two {
+    width: 320px;
+    height: 300px;
+  }
+  .wrapper_two--left {
+    margin-left: -20px;
+    word-break: break-all;
+  }
+  .wrapper_two--left img {
+    margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+  }
+  .wrapper_two--center ul {
+    font-size: 10px;
+    margin-left: 20px;
+  }
+  .wrapper_two--right ul {
+    font-size: 10px;
+    margin-right: 50px;
+    align-self: end;
+  }
+  .wrapper_two li {
+    font-size: 10px;
+    width: 80px;
+    margin-bottom: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
